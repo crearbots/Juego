@@ -14,6 +14,6 @@ public class GUIJuego extends JFrame {
     this.setVisible(true);
     this.setLocationRelativeTo(null);
     //this.setResizable(false);
-    this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+    this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
   }
 }
