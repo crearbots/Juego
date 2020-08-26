@@ -5,7 +5,6 @@ public class FondoPanel extends JPanel {
     //Atributo
     private Image imagen;
 
-    //Metodo sobreescrito
     @Override
     public void paint (Graphics g) {
         //Obteniendo imagen

@@ -5,7 +5,6 @@ import java.awt.Font;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-
 public class GUIMenu extends JFrame implements ActionListener {
     //Atributos
     private FondoPanel fondo = new FondoPanel();
@@ -35,14 +34,14 @@ public class GUIMenu extends JFrame implements ActionListener {
         //Configuracion primera etiqueta
         etiqueta1 = new JLabel("1 Jugador", SwingConstants.CENTER);
         etiqueta1.setBounds(30,50,200,40);
-        etiqueta1.setForeground(Color.WHITE);
+        etiqueta1.setForeground(Color.GREEN);
         etiqueta1.setFont(new Font("Lato Black", 1, 30));
         this.add(etiqueta1);
 
         //Configuracion segunda etiqueta
         etiqueta2 = new JLabel("2 Jugadores", SwingConstants.CENTER);
         etiqueta2.setBounds(270,50,200,40);
-        etiqueta2.setForeground(Color.WHITE);
+        etiqueta2.setForeground(Color.GREEN);
         etiqueta2.setFont(new Font("Lato Black", 1, 30));
         this.add(etiqueta2);
     }
@@ -67,8 +66,12 @@ public class GUIMenu extends JFrame implements ActionListener {
 
     //Metodo que modela el evento
     public void actionPerformed(ActionEvent e) {
+        if(e.getSource() == boton1) {
+            GUIJuego ventana = new GUIJuego(true, "PLAYER 1", "CPU", "cuatroBrazos.jpg", "ultraT.jpg");
+        }
+
         if(e.getSource() == boton2) {
-            GUIJuego ventana = new GUIJuego();
+            GUIJuego ventana = new GUIJuego(false, "PLAYER 1", "PLAYER 2", "planta.jpg", "xrl8.jpg");
         }
     }
 }
