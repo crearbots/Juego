@@ -1,5 +1,6 @@
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 public class Velocidad extends Thread {
     //Atributos
@@ -20,6 +21,14 @@ public class Velocidad extends Thread {
                 }
             
             lamina.repaint();
+            if(lamina.getJugador1Punto()==5) {
+                JOptionPane.showMessageDialog(null,"Fin del juego!!!\n(~^-^)~ "+lamina.getJugador1Nombre()+" ha ganado ~(^-^~)");
+                break;
+            }
+            if(lamina.getJugador2Punto()==5) {
+                JOptionPane.showMessageDialog(null,"Fin del juego!!!\n(~^-^)~ "+lamina.getJugador2Nombre()+" ha gando ~(^-^~)");
+                break;
+            }
         }
     }
 }

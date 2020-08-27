@@ -27,10 +27,11 @@ public class Pelota {
     }
 
     //Metodos
-    public void mover(Rectangle limites, boolean choqueR1, boolean choqueR2){
+    public void mover(Rectangle limites, boolean choqueR1, boolean choqueR2, Usuario j1, Usuario j2){
        x+=dx;
        y+=dy;
        
+       //Choque con las raquetas
        if(choqueR1){
          dx=-dx;
          x=50;
@@ -40,14 +41,19 @@ public class Pelota {
          x=1240;
        }
 
+        //Rebotar al tocar un limite
        if(x >= (limites.getMaxX()-ancho)){
            dx=-dx;
+           j1.setPunto(j1.getPunto()+1);
+           x=650;
        }
        if(y >= (limites.getMaxY()-alto)){
            dy=-dy;
        }
        if(x<0){
            dx=-dx;
+           j2.setPunto(j2.getPunto()+1);
+           x=650;
        }
        if(y<130){
            dy=-dy;
