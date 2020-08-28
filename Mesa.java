@@ -98,20 +98,58 @@ public class Mesa extends FondoPanel {
     }
 
     private void marcador() {
-        switch(jugador1.getPunto()) {
-            case 1: marcador1.setText(""+jugador1.getPunto()); break;
-            case 2: marcador1.setText(""+jugador1.getPunto()); break;
-            case 3: marcador1.setText(""+jugador1.getPunto()); break;
-            case 4: marcador1.setText(""+jugador1.getPunto()); break;
-            case 5: marcador1.setText(""+jugador1.getPunto()); break;
+        //Jugador 1
+        if(jugador1.getPunto()==1 && turno[0]==true) {
+            imagen1 = new ImageIcon("uno.jpg");
+            marcador1.setIcon(new ImageIcon(imagen1.getImage().getScaledInstance(marcador1.getWidth(), marcador1.getHeight(), Image.SCALE_SMOOTH)));
+            turno[0] = false;
+        }
+        if(jugador1.getPunto()==2 && turno[1]==true) {
+            imagen1 = new ImageIcon("dos.jpg");
+            marcador1.setIcon(new ImageIcon(imagen1.getImage().getScaledInstance(marcador1.getWidth(), marcador1.getHeight(), Image.SCALE_SMOOTH)));
+            turno[1] = false;
+        }
+        if(jugador1.getPunto()==3 && turno[2]==true) {
+            imagen1 = new ImageIcon("tres.jpg");
+            marcador1.setIcon(new ImageIcon(imagen1.getImage().getScaledInstance(marcador1.getWidth(), marcador1.getHeight(), Image.SCALE_SMOOTH)));
+            turno[2] = false;
+        }
+        if(jugador1.getPunto()==4 && turno[3]==true) {
+            imagen1 = new ImageIcon("cuatro.jpg");
+            marcador1.setIcon(new ImageIcon(imagen1.getImage().getScaledInstance(marcador1.getWidth(), marcador1.getHeight(), Image.SCALE_SMOOTH)));
+            turno[3] = false;
+        }
+        if(jugador1.getPunto()==5 && turno[4]==true) {
+            imagen1 = new ImageIcon("cinco.jpg");
+            marcador1.setIcon(new ImageIcon(imagen1.getImage().getScaledInstance(marcador1.getWidth(), marcador1.getHeight(), Image.SCALE_SMOOTH)));
+            turno[4] = false;
         }
 
-        switch(jugador2.getPunto()) {
-            case 1: marcador2.setText(""+jugador2.getPunto()); break;
-            case 2: marcador2.setText(""+jugador2.getPunto()); break;
-            case 3: marcador2.setText(""+jugador2.getPunto()); break;
-            case 4: marcador2.setText(""+jugador2.getPunto()); break;
-            case 5: marcador2.setText(""+jugador2.getPunto()); break;
+        //Jugador 2
+        if(jugador2.getPunto()==1 && turno[5]==true) {
+            imagen2 = new ImageIcon("uno.jpg");
+            marcador2.setIcon(new ImageIcon(imagen2.getImage().getScaledInstance(marcador2.getWidth(), marcador2.getHeight(), Image.SCALE_SMOOTH)));
+            turno[5] = false;
+        }
+        if(jugador2.getPunto()==2 && turno[6]==true) {
+            imagen2 = new ImageIcon("dos.jpg");
+            marcador2.setIcon(new ImageIcon(imagen2.getImage().getScaledInstance(marcador2.getWidth(), marcador2.getHeight(), Image.SCALE_SMOOTH)));
+            turno[6] = false;
+        }
+        if(jugador2.getPunto()==3 && turno[7]==true) {
+            imagen2 = new ImageIcon("tres.jpg");
+            marcador2.setIcon(new ImageIcon(imagen2.getImage().getScaledInstance(marcador2.getWidth(), marcador2.getHeight(), Image.SCALE_SMOOTH)));
+            turno[7] = false;
+        }
+        if(jugador2.getPunto()==4 && turno[8]==true) {
+            imagen2 = new ImageIcon("cuatro.jpg");
+            marcador2.setIcon(new ImageIcon(imagen2.getImage().getScaledInstance(marcador2.getWidth(), marcador2.getHeight(), Image.SCALE_SMOOTH)));
+            turno[8] = false;
+        }
+        if(jugador2.getPunto()==5 && turno[9]==true) {
+            imagen2 = new ImageIcon("cinco.jpg");
+            marcador2.setIcon(new ImageIcon(imagen2.getImage().getScaledInstance(marcador2.getWidth(), marcador2.getHeight(), Image.SCALE_SMOOTH)));
+            turno[9] = false;
         }
     }
 }
