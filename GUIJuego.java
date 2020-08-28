@@ -36,18 +36,6 @@ public class GUIJuego extends JFrame {
 
   public void colocarElementos(String name1, String name2, String image1, String image2) {
     //Configuraciones de las etiquetas tipo imagen
-/*    imagen1 = new ImageIcon("cero.jpg");
-    marcador1 = new JLabel(imagen1);
-    marcador1.setBounds(655,0,80,105);
-    marcador1.setIcon(new ImageIcon(imagen1.getImage().getScaledInstance(marcador1.getWidth(), marcador1.getHeight(), Image.SCALE_SMOOTH)));
-    this.add(marcador1);
-
-    imagen2 = new ImageIcon("cero.jpg");
-    marcador2 = new JLabel(imagen2);
-    marcador2.setBounds(565,0,80,105);
-    marcador2.setIcon(new ImageIcon(imagen2.getImage().getScaledInstance(marcador2.getWidth(), marcador2.getHeight(), Image.SCALE_SMOOTH)));
-    this.add(marcador2);*/
-
     imagen3 = new ImageIcon(image1);
     player1 = new JLabel(imagen3);
     player1.setBounds(0,0,110,130);

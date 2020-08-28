@@ -13,7 +13,7 @@ public class Mesa extends FondoPanel {
     Pelota pelota=new Pelota(650,350);
     Raqueta r1=new Raqueta(40,350);
     Raqueta r2=new Raqueta(1260,350);
-    Usuario jugador1, jugador2;
+    private Usuario jugador1, jugador2;
     private ImageIcon imagen1, imagen2;
     private JLabel marcador1, marcador2;
     private boolean[] turno = new boolean[10];
