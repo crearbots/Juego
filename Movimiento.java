@@ -30,7 +30,7 @@ public class Movimiento extends KeyAdapter{
        }
        if(id==KeyEvent.VK_S){
        s = false;
-   }
+        }
        if(id==KeyEvent.VK_UP){
            up = false;
        }

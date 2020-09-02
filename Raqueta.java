@@ -47,7 +47,7 @@ public class Raqueta {
     }
 
     public void moverR2(Rectangle limites, int corY, int corX) {
-        if(corX >= 950) {
+        if(corX >= 1100) {
             if((corY > y) && (y != limites.getMaxY()-alto)) {
                 y++;
             }
