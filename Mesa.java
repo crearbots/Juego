@@ -19,15 +19,15 @@ public class Mesa extends FondoPanel {
     private boolean[] turno = new boolean[10];
 
     //Constructor
-    public Mesa(boolean cpu) {
+    public Mesa(boolean cpu, String nombre1, String nombre2) {
         //Construyendo elementos del juego
         Arrays.fill(turno, Boolean.TRUE);
         r2 = new Raqueta(1260, 350, cpu);
-        jugador1 = new Usuario("jugador 1");
+        jugador1 = new Usuario(nombre1);
         if(cpu ==  true) {
             jugador2 = new Usuario("CPU");
         } else {
-            jugador2 = new Usuario("Juagdor 2");
+            jugador2 = new Usuario(nombre2);
         }
 
         //Definiendo marcador

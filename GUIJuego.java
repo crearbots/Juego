@@ -14,7 +14,7 @@ public class GUIJuego extends JFrame {
   //Constructor
   public GUIJuego(boolean cpu, String jugador1, String jugador2, String ruta1, String ruta2) {
     //Construyecto lamina
-    lamina = new Mesa(cpu);
+    lamina = new Mesa(cpu, jugador1, jugador2);
     animacion = new Velocidad(lamina);
 
     //Condiguraciones generales
@@ -60,5 +60,6 @@ public class GUIJuego extends JFrame {
     player2.setForeground(Color.GREEN);
     player2.setFont(new Font("Lato Black", 1, 60));
     this.add(player2);
+
   }
 }
